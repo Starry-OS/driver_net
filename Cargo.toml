@@ -13,9 +13,11 @@ keywords = ["Starry"]
 [features]
 default = []
 ixgbe = ["dep:ixgbe-driver"]
+e1000 = ["dep:e1000-driver"]
 
 [dependencies]
 spin = "0.9"
 log = "0.4"
 driver_common = { git = "https://github.com/Starry-OS/driver_common.git" }
 ixgbe-driver = {git = "https://github.com/KuangjuX/ixgbe-driver.git", rev = "8e5eb74", optional = true}
+e1000-driver = {git = "https://github.com/elliott10/e1000-driver.git", rev = "7b2458e5", optional = true}
